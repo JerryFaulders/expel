@@ -1,0 +1,44 @@
+<html>
+   <head> 
+       <h1> Calculator </h1>
+       
+   </head>
+   <body>
+        <form>
+            <table id="calculator">
+                <!--Display and clear button -->
+                <tr> 
+                    <td colspan="3"><input type="text" id="result" disabled/></td>
+                    <td><input type="button" id="func" value="c" onclick="clr()"/> </td> 
+                </tr> 
+                <!-- Buttons numbers, decimal, equals, and functions -->
+                <tr>
+                    <td><input type="button" id='num' value="1" onclick="dis('1')"/> </input> </td> 
+                    <td><input type="button" id ='num' value="2" onclick="dis('2')"> </input> </td> </td> 
+                    <td><input type="button" id='num' value="3" onclick="dis('3')"> </input> </td> 
+                    <td><input type="button" id='func' value="/" onclick="dis('/')"> </input> </td> 
+                </tr> 
+                <tr> 
+                    <td><input type="button" id='num' value="4" onclick="dis('4')"> </input> </td> 
+                    <td><input type="button" id='num' value="5" onclick="dis('5')"> </input> </td> 
+                    <td><input type="button" id='num' value="6" onclick="dis('6')"> </input> </td> 
+                    <td><input type="button" id='func' value="-" onclick="dis('-')"> </input> </td> 
+                </tr> 
+                <tr> 
+                    <td><input type="button" id='num' value="7" onclick="dis('7')"> </input> </td> 
+                    <td><input type="button" id='num' value="8" onclick="dis('8')"> </input> </td> 
+                    <td><input type="button" id='num' value="9" onclick="dis('9')"> </input> </td> 
+                    <td><input type="button" id='calc' value="+" onclick="dis('+')"> </input> </td> 
+                </tr> 
+                <tr> 
+                    <td><input type="button" id='num' value="." onclick="dis('.')"> </input> </td> 
+                    <td><input type="button" id='num' value="0" onclick="dis('0')"> </input> </td>
+                    <td><input type="button" value="=" id='func' onclick="solve()"> </input> </td> 
+                    <td><input type="button" id='func' value="*" onclick="dis('*')"> </input> </td> 
+                </tr> 
+            </table>
+        </form>
+        <script type='text/javascript' src="./calc.js"></script>
+        <link rel="stylesheet" type="text/css" href="calc.css">
+   </body>
+</html>
